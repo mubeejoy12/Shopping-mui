@@ -24,3 +24,8 @@ const Navbar = () => {
     { Name: "Blog", Link: "#" },
     { Name: "Contact Us", Link: "#" },
   ];
+            {MenuItems.map((item) => (
+              <Typography sx={{ cursor: "pointer", fontSize: "14px" }}>
+                {item.Name}
+              </Typography>
+            ))}
