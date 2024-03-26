@@ -29,3 +29,7 @@ const Navbar = () => {
                 {item.Name}
               </Typography>
             ))}
+            {MenuItems.map((item) => (
+              <MenuItem sx={{ cursor: "pointer", fontSize: "14px" }}>
+                {item.Name}
+              </MenuItem>
