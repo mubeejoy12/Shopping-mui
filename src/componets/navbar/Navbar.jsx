@@ -17,3 +17,10 @@ const Navbar = () => {
     display: "flex",
     gap: 5,
   });
+  const MenuItems = [
+    { Name: "Home", Link: "#" },
+    { Name: "Prooducts", Link: "#" },
+    { Name: "Portfolio", Link: "#" },
+    { Name: "Blog", Link: "#" },
+    { Name: "Contact Us", Link: "#" },
+  ];
