@@ -39,6 +39,7 @@ const Navbar = () => {
     { Name: "Blog", Link: "#" },
     { Name: "Contact Us", Link: "#" },
   ];
+  const [open, setOpen] = useState(false);
   return (
     <>
       <AppBar sx={{ background: "black" }}>
