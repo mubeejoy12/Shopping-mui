@@ -60,6 +60,7 @@ const Navbar = () => {
             <InputBase placeholder="Search..." sx={{ color: "white" }} />
             <MenuIcon
               sx={{ display: { xs: "block", sm: "block", md: "none" } }}
+              onClick={() => setOpen(!open)}
             />
           </SearchBox>
         </StyledToolbar>
@@ -67,7 +68,8 @@ const Navbar = () => {
           id="demo-positioned-menu"
           aria-labelledby="demo-positioned-button"
         //   anchorEl={anchorEl}
-          open={true}
+          open={open}
+          onClose={() => setOpen(!open)}
           anchorOrigin={{
             vertical: "top",
             horizontal: "right",
