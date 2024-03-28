@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 // import  { Instagram, FacebookIcon, Twitter } from "@mui/icons-material/";
 
@@ -67,7 +67,7 @@ const Navbar = () => {
         <Menu
           id="demo-positioned-menu"
           aria-labelledby="demo-positioned-button"
-        //   anchorEl={anchorEl}
+          //   anchorEl={anchorEl}
           open={open}
           onClose={() => setOpen(!open)}
           anchorOrigin={{
@@ -79,15 +79,13 @@ const Navbar = () => {
             horizontal: "left",
           }}
         >
-            <Box sx={{width:350, height: "90vh"}}>
+          <Box sx={{ width: 350, height: "90vh" }}>
             {MenuItems.map((item) => (
               <MenuItem sx={{ cursor: "pointer", fontSize: "14px" }}>
                 {item.Name}
               </MenuItem>
             ))}
-            
-            </Box>
-          
+          </Box>
         </Menu>
       </AppBar>
     </>
