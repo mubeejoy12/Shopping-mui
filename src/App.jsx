@@ -6,9 +6,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero/>
-
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/details" element={<Details />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
